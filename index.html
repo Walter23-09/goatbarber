@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d09">
+
+    <meta
+        name="description"
+        content="GOAT BARBER — estilo, precisão e atitude. Agende seu horário."
+    >
+
+    <title>GOAT BARBER | Seu estilo, nossa arte</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <a class="brand" href="#inicio">
+            GOAT<span>BARBER.</span>
+        </a>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav id="nav" aria-label="Menu principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#localizacao">Localização</a>
+        </nav>
+
+        <!-- BOTÃO DE AGENDAMENTO -->
+        <a
+            class="btn header-cta"
+            href="https://cashbarber.com.br/goatbarber"
+            target="_blank"
+            rel="noopener"
+        >
+            AGENDAR ↗
+        </a>
+
+        <!-- MENU MOBILE -->
+        <button
+            class="menu"
+            id="menu"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+    </header>
+
+    <main>
+
+        <!-- SEÇÃO PRINCIPAL -->
+        <section class="hero" id="inicio">
+
+            <div class="wrap">
+
+                <p class="kicker">
+                    GOAT BARBER • FORTALEZA
+                </p>
+
+                <h1>
+                    O ESTILO É <em>SEU.</em>
+                    <br>
+                    A ARTE É <em>NOSSA.</em>
+                </h1>
+
+                <p class="lead">
+                    Mais do que um corte: uma experiência de estilo,
+                    cuidado e personalidade.
+                </p>
+
+                <div class="actions">
+
+                    <a
+                        class="btn"
+                        href="https://cashbarber.com.br/goatbarber"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        AGENDAR MEU HORÁRIO ↗
+                    </a>
+
+                    <a class="btn outline" href="#sobre">
+                        CONHEÇA A GOAT ↓
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FAIXA DE DESTAQUE -->
+        <div class="ticker">
+            PRECISÃO ✦ ESTILO ✦ ATITUDE ✦ GOAT BARBER
+        </div>
+
+        <!-- SOBRE A BARBEARIA -->
+        <section class="section" id="sobre">
+
+            <div class="wrap">
+
+                <p class="kicker">
+                    NOSSA ESSÊNCIA
+                </p>
+
+                <h2>
+                    MAIS QUE UM CORTE.
+                    <br>
+                    <em>UMA EXPERIÊNCIA.</em>
+                </h2>
+
+                <p class="intro">
+                    Um visual com personalidade começa nos detalhes.
+                    Conheça o universo GOAT BARBER.
+                </p>
+
+                <!-- GALERIA DE FOTOS -->
+                <div class="photos">
+
+                    <img
+                        src="img/corte1.svg"
+                        alt="Corte realizado pela barbearia"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="img/corte2.svg"
+                        alt="Detalhes do atendimento"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="img/ambiente.svg"
+                        alt="Ambiente da barbearia"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section class="section shade" id="servicos">
+
+            <div class="wrap">
+
+                <p class="kicker">
+                    SERVIÇOS
+                </p>
+
+                <h2>
+                    SEU VISUAL EM <em>BOAS MÃOS.</em>
+                </h2>
+
+                <div class="cards">
+
+                    <!-- CORTE -->
+                    <article class="card">
+
+                        <span>01 / CORTE</span>
+
+                        <h3>Corte masculino</h3>
+
+                        <p>
+                            Do clássico ao moderno,
+                            um visual que combina com você.
+                        </p>
+
+                    </article>
+
+                    <!-- BARBA -->
+                    <article class="card">
+
+                        <span>02 / BARBA</span>
+
+                        <h3>Barba</h3>
+
+                        <p>
+                            Acabamento e cuidado
+                            para completar o estilo.
+                        </p>
+
+                    </article>
+
+                    <!-- CORTE + BARBA -->
+                    <article class="card">
+
+                        <span>03 / COMBO</span>
+
+                        <h3>Corte + Barba</h3>
+
+                        <p>
+                            O cuidado completo
+                            em uma única visita.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <!-- AGENDAMENTO -->
+                <a
+                    class="btn centered"
+                    href="https://cashbarber.com.br/goatbarber"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    CONSULTAR SERVIÇOS E VALORES ↗
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- VÍDEO DA BARBEARIA -->
+        <section class="section" id="galeria">
+
+            <div class="wrap">
+
+                <p class="kicker">
+                    POR DENTRO DA GOAT
+                </p>
+
+                <h2>
+                    VEJA A <em>EXPERIÊNCIA.</em>
+                </h2>
+
+                <div class="video-frame">
+
+                    <video
+                        id="goatVideo"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="img/capa-video.svg"
+                        style="display:none"
+                    >
+
+                        <source
+                            src="videos/goatbarber.mp4"
+                            type="video/mp4"
+                        >
+
+                        Seu navegador não suporta vídeo.
+
+                    </video>
+
+                    <!-- APARECE ENQUANTO NÃO HOUVER VÍDEO -->
+                    <div class="video-placeholder">
+
+                        <span>▶</span>
+
+                        <strong>
+                            VÍDEO DA GOAT BARBER
+                        </strong>
+
+                        <small>
+                            Adicione seu vídeo em
+                            videos/goatbarber.mp4
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- AVALIAÇÕES REAIS DO GOOGLE -->
+        <section class="section shade" id="avaliacoes">
+
+            <div class="wrap">
+
+                <p class="kicker">
+                    REPUTAÇÃO & CONFIANÇA
+                </p>
+
+                <h2>
+                    QUEM CONHECE, <em>RECOMENDA.</em>
+                </h2>
+
+                <p class="intro">
+                    Avaliações reais de clientes da GOAT BARBER
+                    publicadas no Google Maps.
+                </p>
+
+                <!-- PRINTS DAS AVALIAÇÕES -->
+                <div class="reviews">
+
+                    <figure>
+
+                        <img
+                            src="img/feedback1.png"
+                            alt="Print de avaliação real do Google 1"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+                    <figure>
+
+                        <img
+                            src="img/feedback2.png"
+                            alt="Print de avaliação real do Google 2"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+                    <figure>
+
+                        <img
+                            src="img/feedback3.png"
+                            alt="Print de avaliação real do Google 3"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="section" id="localizacao">
+
+            <div class="wrap location">
+
+                <div>
+
+                    <p class="kicker">
+                        ONDE ESTAMOS
+                    </p>
+
+                    <h2>
+                        VENHA PARA A <em>GOAT.</em>
+                    </h2>
+
+                    <p>
+                        Rua 107, nº 22 — Conjunto Ceará I,
+                        Fortaleza — CE.
+                    </p>
+
+                    <a
+                        class="btn"
+                        href="https://www.google.com/maps/search/?api=1&query=GOAT%20BARBER%20Rua%20107%2022%20Conjunto%20Cear%C3%A1%20Fortaleza"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        COMO CHEGAR ↗
+                    </a>
+
+                </div>
+
+                <!-- CARD DE LOCALIZAÇÃO -->
+                <div class="location-art">
+
+                    <span>⌖</span>
+
+                    <strong>GOAT BARBER</strong>
+
+                    <small>
+                        Conjunto Ceará • Fortaleza
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CHAMADA FINAL -->
+        <section class="cta">
+
+            <p class="kicker">
+                SEU PRÓXIMO VISUAL
+            </p>
+
+            <h2>
+                PRONTO PARA <em>RENOVAR?</em>
+            </h2>
+
+            <p>
+                Agende seu horário e venha conhecer a GOAT.
+            </p>
+
+            <div class="actions">
+
+                <a
+                    class="btn"
+                    href="https://cashbarber.com.br/goatbarber"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    AGENDAR AGORA ↗
+                </a>
+
+                <a
+                    class="btn outline"
+                    href="https://www.instagram.com/goatbarberbr/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    INSTAGRAM ↗
+                </a>
+
+                <a
+                    class="btn outline"
+                    href="https://wa.link/eydlin"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    WHATSAPP ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <a class="brand" href="#inicio">
+            GOAT<span>BARBER.</span>
+        </a>
+
+        <p>
+            © <span id="year">2026</span> GOAT BARBER.
+            Todos os direitos reservados.
+        </p>
+
+        <!-- CRÉDITO DO DESENVOLVEDOR -->
+        <a
+            class="credit"
+            href="https://wa.me/5585992939908?text=Ol%C3%A1%2C%20Walter!%20Vi%20seu%20trabalho%20no%20site%20da%20GOAT%20BARBER."
+            target="_blank"
+            rel="noopener"
+        >
+            Desenvolvido por <strong>Walter ↗</strong>
+        </a>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts.js" defer></script>
+
+</body>
+
+</html>
