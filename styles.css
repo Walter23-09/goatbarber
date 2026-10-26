@@ -310,13 +310,17 @@ p {
     border: 1px solid #315334;
     border-radius: 9px;
     overflow: hidden;
-    min-height: 160px;
+    min-width: 0;
+    width: 100%;
+    max-width: 520px;
+    justify-self: center;
     align-self: start;
 }
 
 .reviews img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
 }
@@ -448,6 +452,14 @@ footer p {
     }
 }
 
+@media (min-width: 551px) and (max-width: 1000px) {
+    .reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .reviews figure:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        width: calc((100% - 15px) / 2);
+    }
+}
+
 /* CELULARES */
 @media (max-width: 550px) {
     .header {
@@ -487,11 +499,8 @@ footer p {
     }
 
     .reviews {
-        gap: 7px;
-    }
-
-    .reviews figure {
-        min-height: 100px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
     }
 
     .location {
@@ -514,4 +523,22 @@ footer p {
     *:after {
         transition: none !important;
     }
+}
+
+/* Ícones vetoriais: aparência consistente em qualquer aparelho. */
+.icon { width: 18px; height: 18px; flex-shrink: 0; vertical-align: middle; }
+.btn { gap: 7px; text-align: center; }
+.credit .icon { width: 14px; height: 14px; }
+.feature-icon { width: 52px; height: 52px; color: var(--green); }
+.menu { min-width: 44px; min-height: 44px; cursor: pointer; }
+.menu .icon { display: block; }
+.menu-close, .menu[aria-expanded="true"] .menu-lines { display: none; }
+.menu[aria-expanded="true"] .menu-close { display: block; }
+.ticker-dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: currentColor; margin: 0 8px; vertical-align: middle; }
+section[id] { scroll-margin-top: 90px; }
+@media (max-width: 360px) {
+    .header { gap: 6px; padding-inline: 4%; }
+    .brand { font-size: 18px; }
+    .header-cta { padding: 9px 7px; }
+    .menu { padding: 8px; }
 }
